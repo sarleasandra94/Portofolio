@@ -1,0 +1,43 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-toolbar  class="example-toolbar">
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1 class="example-app-name">SANDRA SARLEA</h1>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="example-sidenav-container"
+                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+        <mat-nav-list>
+            <mat-list-item>
+                <img matListAvatar src="assets/profilePicture.jpg">
+                <a mat-list-item routerLink=".">ABOUT ME</a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>school</mat-icon>
+                    <a mat-list-item routerLink=".">EDUCATION</a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>work_outline</mat-icon>
+                    <a mat-list-item routerLink=".">EXPERIENCE</a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>code</mat-icon>
+                    <a mat-list-item routerLink=".">SKILLS</a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>perm_media</mat-icon>
+                    <a mat-list-item routerLink=".">BLOG</a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>contact_mail</mat-icon>
+                    <mat-list-item routerLink="/contact">CONTACT</mat-list-item>
+            </mat-list-item>
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
