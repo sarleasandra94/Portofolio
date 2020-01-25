@@ -12,13 +12,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavigationComponent } from './profile/navigation/navigation.component';
 import { ContactComponent } from './profile/contact/contact.component';
 import { AboutMeComponent } from './profile/about-me/about-me.component';
+import { WelcomeComponent } from './profile/welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     ContactComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

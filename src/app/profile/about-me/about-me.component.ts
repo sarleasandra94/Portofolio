@@ -10,9 +10,6 @@ import {Component, Input} from '@angular/core';
 })
 export class AboutMeComponent {
 
-    @Input()
-    isShown : String;
-
     constructor(){
 
     }

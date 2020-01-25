@@ -1,0 +1,11 @@
+div {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-image: url('../../../assets/mountains.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
