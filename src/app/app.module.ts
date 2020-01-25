@@ -11,12 +11,14 @@ import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { NavigationComponent } from './profile/navigation/navigation.component';
 import { ContactComponent } from './profile/contact/contact.component';
+import { AboutMeComponent } from './profile/about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    ContactComponent
+    ContactComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+img {
+    height: 30%;
+    width: 20%;
+    margin-top: 5%;
+}
+
+h1 {
+    margin-bottom: 0%;
+}
+
+.containerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
